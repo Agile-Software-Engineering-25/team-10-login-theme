@@ -1,5 +1,7 @@
-FROM debian:trixie
+FROM debian:trixie-slim 
 
-COPY material /mnt
+RUN mkdir -p /mnt/material
+
+COPY material /mnt/material
 
 ENTRYPOINT ["/bin/bash", "-c", "--"]
