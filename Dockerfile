@@ -1,7 +1,7 @@
 FROM debian:trixie-slim 
 
-RUN mkdir -p /mnt/material
+RUN mkdir -p /mnt/
 
-COPY material /mnt/material
+COPY themes /mnt/
 
 ENTRYPOINT ["/bin/bash", "-c", "--"]
